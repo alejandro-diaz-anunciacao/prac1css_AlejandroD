@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/images/channels4_profile.jpg" alt="Logo">
+        <h1><strong>CONTACT</strong></h1>
+        <ul>
+            <li>
+                <a href="/content.html">Content</a>
+            </li>
+            <li>
+                <a href="/index.html">Index</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Datos de contacto</legend>
+
+                <label for="name">Nombre: </label>
+                <input type="text" id="name" name="name" placeholder="Introduce tu nombre" minlength="2" maxlength="20" required>
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Introduce tu correo" required>
+                <br>
+                <label for="age">Edad: </label>
+                <input type="number" id="age" name="age" min="18" max="26">
+                <br>
+                <label for="web">Introduce tu sitio web: </label>
+                <input type="url" id="web" name="web" placeholder="Opcional">
+                <br>
+                <label for="birth">Fecha de nacimiento</label>
+                <input type="date" id="birth" name="birth" required>
+                <br>
+                <label for="favourite-color">Color favorito</label>
+                <input type="color" id="favourite-color" name="favourite-color">
+                <br>
+                <label for="gusto">Indica tu nivel de gusto por la producción musical:</label>
+                <br>
+                <input type="range" value="number">
+                <br>
+                <label for="curriculum">Envíanos tu curriculum: </label>
+                <br>
+                <input 
+                type="file"
+                id="dockpicker"
+                accept=".pdf">
+                <br>
+                <label for="opinion">Dinos tu opinion: </label>
+                <br>
+                <textarea name="opinion" id="opinion" rows="4" cols="30"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preguntas</legend>
+                <p>Para eliminar frecuencias indeseadas que debemos usar:</p>
+                <label for="Compresor">Compresor</label>
+                <input type="radio" id="Compresor" name="Compresor">
+                <br>
+                <label for="EQ">Ecualizador</label>
+                <input type="radio" id="EQ" name="EQ">
+                <br>
+                <label for="Reverb">Reverb</label>
+                <input type="radio" id="Reverb" name="Reverb">
+                <br>
+    
+                <p>Para que quieres aprender a producir</p>
+                <label for="fun">Diversión</label>
+                <input type="checkbox" id="fun" name="fun">
+                <br>
+                <label for="curiosity">curiosidad</label>
+                <input type="checkbox" id="curiosity" name="curiosity">
+                <br>
+                <label for="professional">Uso profesional</label>
+                <input type="checkbox" id="professional" name="professional">
+                <br>
+                <label for="educative">Uso educativo</label>
+                <input type="checkbox" id="educative" name="educative">
+                <br>
+    
+                <label for="daw-election">¿Que DAW usas? </label>
+                <select name="daw-election" id="daw-election">
+                    <option value="Ableton">Ableton</option>
+                    <option value="Fl Studio">Fl Studio</option>
+                    <option value="Bitwig Studio">Bitwig Studio</option>
+                    <option value="Reaper">Reaper</option>
+                    <option value="Pro Tools">Pro Tools</option>
+                    <option value="Logic Pro">Logic Pro</option>
+                </select>
+                <br>
+                <label for="compresor-election">Compresor favorito</label>
+                <select name="compresor-select" id="compresor-select" multiple>
+                    <optgroup label="digital">
+                        <option value="CLA 76">CLA 76</option>
+                        <option value="SSL G">SSL G</option>
+                        <option value="Teletronix LA-2A">Teletronix LA-2A</option>
+                        <option value="PUIGCHILD 670">PUIGCHILD 670</option>
+                    </optgroup>
+                    <optgroup label="analogic">
+                        <option value="VCA">VCA</option>
+                        <option value="FET">FET</option>
+                        <option value="Vari-Mu">Vari-Mu</option>
+                    </optgroup>
+                </select>
+                <br>
+            </fieldset>
+
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <footer>
+           <p>Instagram: @andial.beats</p>
+           <p>FaceBook: @andial.beats</p>
+           <p>YouTube: <a href="https://www.youtube.com/@AndialBeats" target="_blank"></a>Andial Beats</p>
+           <p><a href="mailito: andialbeats@gmail.com">Contáctame</a></p>
+            <p>
+                <small>&copy Andial studios</small>
+            </p>
+    </footer>
+</body>
+
+</html>
