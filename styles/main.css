@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root{
     --bg: #FFFBF2;
@@ -10,8 +11,6 @@
     --muted: #6b6b6b;
     --max-width: 1000px;
 }
-
-* { box-sizing: border-box; }
 
 html,body{
     height: 100%;
@@ -52,7 +51,7 @@ header{
 #header-essentials{
     text-align: center;
     width: 100%;
-    padding: 0 60px; /* avoid overlap with logo */
+    padding: 0 60px;
 }
 
 h1{    
@@ -62,7 +61,7 @@ h1{
     color: #5b2b2b;
 }
 
-/* Navigation inside header */
+
 #header-essentials ul{
     display: flex;
     justify-content: center;
@@ -93,12 +92,18 @@ ol{
 }
 
 main{
-    max-width: var(--max-width);
-    margin: 28px auto;
     padding: 20px;
 }
 
+.main-container {
+    display: flex;
+    max-width: var(--max-width);
+    margin: 28px auto;
+    padding: 0 20px;
+}
+
 #bloques-contenido{
+    flex: 2;
     margin-right: 20px;
 }
 
@@ -120,25 +125,28 @@ article{
     margin-bottom: 14px;
 }
 
-article img{    
+#index-img{    
     display: block;
     max-width: 100%;
     height: auto;
     border-radius: 6px;
     margin-top: 10px;
+    justify-content: center;
+    align-items: center
 }
 
 aside{
+    flex: 1;
     max-width: 240px;
     padding: 30px;
     background: white;
     border-radius: 8px;
     box-shadow: 0 1px 6px rgba(0,0,0,0.04);
-    position: fixed;
-    right: 20px;
+    position: sticky;
     top: 140px;
     height: 50%;
 }
+
 
 footer{
     background: #efe7df;
@@ -147,4 +155,112 @@ footer{
     margin-top: 30px;
 }
 
-footer p{ margin: 6px 0; color: var(--muted); }
+footer p{ 
+    margin: 6px 0; color: var(--muted); 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead th {
+    background-color: var(--accent);
+    color: white;
+    font-weight: bold;
+}
+
+tr{
+    background-color: #f2f2f2;
+}
+
+#imagenes{
+    display: flex;
+}
+
+caption {
+    caption-side: top;
+    font-size: 1.em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+}
+
+fieldset {
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--accent);
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+
+button, input[type="submit"] {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: var(--accent-dark);
+}
+
+input, select, textarea {
+    accent-color: var(--accent);
+}
+
+
